@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Styling */
+body {
+    background-image: url("b3.jpeg");
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header{
+    background: violet;
+    color: white;
+    padding: 10px 0;
+    /*border:2px solid white;*/
+    border-radius: 5px;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+} 
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color:darkgreen;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.product p {
+    font-size: 18px;
+    color: #777;
+}
+
+.product button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.product-list img{
+    height: 150px;
+    width: 150px;
+
+}
+
+.pera_second{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+h2{
+    color: mediumslateblue;
+}
+
+.search{
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.btn{
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.pera_first{
+    color:aqua;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header ul li a {
+        font-size: 16px;
+    }
+
+    .product h3 {
+        font-size: 18px;
+    }
+
+    .product p {
+        font-size: 16px;
+    }
+}
